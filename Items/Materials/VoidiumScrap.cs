@@ -14,7 +14,7 @@ namespace Pandemonium.Items.Materials
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("VoidiumScrap");
+            DisplayName.SetDefault("Voidium Scrap");
         }
         public override void SetDefaults()
         {

@@ -14,7 +14,7 @@ namespace Pandemonium.Items.Materials
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("PeaPod");
+            DisplayName.SetDefault("Pea Pod");
         }
         public override void SetDefaults()
         {
@@ -28,7 +28,6 @@ namespace Pandemonium.Items.Materials
             item.useAnimation = 15;
             item.useTime = 10;
             item.useStyle = 1;
-            item.consumable = true;
             item.rare = ItemRarityID.Green;
         }
     }
