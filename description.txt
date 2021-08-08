@@ -1,12 +1,13 @@
-[i/s1:2225] [c/ff5700:The Pandemonium Mod is in developement at the moment...] [i/s1:2225]
+[i/s1:2225][c/ff5700:The Pandemonium Mod is in developement at the moment...][i/s1:2225]
 
 [i/s1:2177]
 Developers: 
--	[c/df9e37:Intro]
--	[c/df9e37:Vintage]
+-[c/df9e37:Intro]
+-[c/df9e37:Vintage]
 
 [i/s1:2177]
 Spriters:
--	[c/26d293:Intro]
--	[c/26d293:smao]
--	[c/26d293:SmashMania]
+-[c/26d293:Gaia]
+-[c/26d293:Intro]
+-[c/26d293:smao]
+-[c/26d293:SmashMania]
