@@ -24,5 +24,17 @@ namespace Pandemonium.Items.Materials
             item.melee = false;
             item.rare = ItemRarityID.LightPurple;
         }
+        public override void AddRecipes()
+        {
+            var recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<BasaliteBar>(), 1);
+            recipe.AddIngredient(ItemID.FragmentNebula, 1);
+            recipe.AddIngredient(ItemID.FragmentSolar, 1);
+            recipe.AddIngredient(ItemID.FragmentStardust, 1);
+            recipe.AddIngredient(ItemID.FragmentVortex, 1);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
     }
 }

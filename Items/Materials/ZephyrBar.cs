@@ -30,5 +30,16 @@ namespace Pandemonium.Items.Materials
             scale = 1f;
             return base.PreDrawInInventory(spriteBatch, position, frame, drawColor, itemColor, origin, scale);
         }
+        public override void AddRecipes()
+        {
+            var recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.SilverBar, 1);
+            recipe.AddIngredient(ItemID.Feather, 3);
+            recipe.AddIngredient(ItemID.SunplateBlock, 5);
+            recipe.AddIngredient(ItemID.Bone, 5);
+            recipe.AddTile(TileID.SkyMill);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
     }
 }

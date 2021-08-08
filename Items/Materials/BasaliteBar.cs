@@ -28,8 +28,8 @@ namespace Pandemonium.Items.Materials
         public override void AddRecipes()
         {
             var recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ModContent.ItemType<BasaltOre>(), 4);
-            recipe.AddTile(TileID.Furnaces);
+            recipe.AddIngredient(ModContent.ItemType<BasaltOre>(), 5);
+            recipe.AddTile(TileID.AdamantiteForge);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
