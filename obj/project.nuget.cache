@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WJuCstsfNpCxWmwSswKRK6Cf5vZakDCJJ9lwVBBruCM3ngasjXpKjDJ0/ymMibzLIIaGQJUpEqukr1qAzyVEkg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cm18g\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Pandemonium\\Pandemonium.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cm18g\\.nuget\\packages\\tmodloader.codeassist\\0.1.2\\tmodloader.codeassist.0.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
