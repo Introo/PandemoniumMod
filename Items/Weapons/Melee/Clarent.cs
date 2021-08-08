@@ -33,7 +33,7 @@ namespace Pandemonium.Items.Weapons.Melee
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.DarkShard, 1);
             recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddIngredient(ItemID.HallowBar, 12);
+            recipe.AddIngredient(ItemID.HallowedBar, 12);
         }
     }
 }
