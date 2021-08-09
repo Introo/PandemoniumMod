@@ -11,3 +11,4 @@ Spriters:
 -[c/26d293:Intro]
 -[c/26d293:smao]
 -[c/26d293:SmashMania]
+-[c/26d293:Nalyd]
