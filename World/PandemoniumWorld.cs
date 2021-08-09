@@ -39,25 +39,5 @@ namespace Pandemonium
                 WorldGen.TileRunner(x, y, WorldGen.genRand.Next(6, 12), WorldGen.genRand.Next(3, 6), ModContent.TileType<Items.Tiles.LithiumOre>());
             }
         }
-        public override void PostUpdate()
-        {
-            if(NPC.downedGolemBoss == true)
-            {
-                Main.NewText("Basalite pollutes the ash");
-                int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
-                int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
-
-                WorldGen.TileRunner(x, y, WorldGen.genRand.Next(6, 12), WorldGen.genRand.Next(3, 6), ModContent.TileType<Items.Tiles.BasaltOre>());
-            }
-            if(Main.hardMode == true)
-            {
-                Main.NewText("Glaciers arise from the cold Tundra");
-                int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
-                int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
-
-                WorldGen.TileRunner(x, y, WorldGen.genRand.Next(6, 12), WorldGen.genRand.Next(3, 6), ModContent.TileType<Items.Tiles.GlacieriteOre>());
-            }
-        }
-
     }
 }

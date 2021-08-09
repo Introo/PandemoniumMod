@@ -22,20 +22,20 @@ namespace Pandemonium.NPCs
         {
             if(npc.type == NPCID.Golem && !NPC.downedGolemBoss)
             {
-                Main.NewText("Basalite pollutes the ash");
-                int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
-                int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
+                ///Main.NewText("Basalite pollutes the ash");
+                ///int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
+                ///int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
 
-                WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(2, 6), (ushort)ModContent.TileType<Items.Tiles.BasaltOre>());
+                ///WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(2, 6), (ushort)ModContent.TileType<Items.Tiles.BasaltOre>());
                 return false;
             }
             if (npc.type == NPCID.WallofFlesh && !Main.hardMode)
             {
-                Main.NewText("Glaciers arise from the cold Tundra");
-                int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
-                int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
+                ///Main.NewText("Glaciers arise from the cold Tundra");
+                ///int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
+                ///int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
 
-                WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(3, 6), (ushort)ModContent.TileType<Items.Tiles.GlacieriteOre>());
+                ///WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(3, 6), (ushort)ModContent.TileType<Items.Tiles.GlacieriteOre>());
                 return false;
             }
             return false; 
