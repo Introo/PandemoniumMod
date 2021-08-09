@@ -18,15 +18,16 @@ namespace Pandemonium.NPCs
 {
     public class NPCs : GlobalNPC
     {
-        public override void NPCLoot(Terraria.NPC npc)
+        public override bool PreNPCLoot(Terraria.NPC npc)
         {
-            if(npc.type == NPCID.Golem && NPC.downedGolemBoss == true)
+            if(npc.type == NPCID.Golem && !NPC.downedGolemBoss)
             {
                 Main.NewText("Basalite pollutes the ash");
                 int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
                 int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
 
-                WorldGen.TileRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(2, 6), ModContent.TileType<Items.Tiles.BasaltOre>());
+                WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(2, 6), (ushort)ModContent.TileType<Items.Tiles.BasaltOre>());
+                return false;
             }
             if (npc.type == NPCID.WallofFlesh && !Main.hardMode)
             {
@@ -34,8 +35,10 @@ namespace Pandemonium.NPCs
                 int x = WorldGen.genRand.Next(200, Main.maxTilesX - 200);
                 int y = WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY - 500);
 
-                WorldGen.TileRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(3, 6), ModContent.TileType<Items.Tiles.GlacieriteOre>());
+                WorldGen.OreRunner(x, y, WorldGen.genRand.Next(2, 12), WorldGen.genRand.Next(3, 6), (ushort)ModContent.TileType<Items.Tiles.GlacieriteOre>());
+                return false;
             }
+            return false; 
         }
     }
 }
