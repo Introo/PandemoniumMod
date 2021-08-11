@@ -27,7 +27,7 @@ namespace Pandemonium.Items.Tools
             item.width = 52;
             item.height = 48;
             item.damage = 12;
-            item.useTime = 9;
+            item.useTime = 11;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.useAnimation = 23;
             item.autoReuse = true;

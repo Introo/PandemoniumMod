@@ -28,7 +28,7 @@ namespace Pandemonium.Items.Tools
             item.width =  62;
             item.height = 62;
             item.damage = 40;
-            item.useTime = 10;
+            item.useTime = 7;
             item.useAnimation = 23;
             item.autoReuse = true;
             item.useTurn = true;
