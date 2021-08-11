@@ -35,5 +35,11 @@ namespace Pandemonium.Items.Weapons.Melee
             recipe.AddIngredient(ItemID.SoulofFright, 5);
             recipe.AddIngredient(ItemID.HallowedBar, 12);
         }
+        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        {
+            Main.screenPosition += Utils.RandomVector2(Main.rand, Main.rand.Next(-199, 200), Main.rand.Next(-199, 200));
+            Main.PlaySound(SoundID.Item88, player.position);
+
+        }
     }
 }

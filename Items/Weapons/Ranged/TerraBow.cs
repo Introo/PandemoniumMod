@@ -32,9 +32,9 @@ namespace Pandemonium.Items.Weapons.Ranged
             item.useStyle = 5;
             item.useAnimation = 30;
         }
-        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
-        {
-        }
+        ///public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        ///{
+        ///}
         public override bool ConsumeAmmo(Player player)
         {
             return Main.rand.NextFloat() >= .20f;
