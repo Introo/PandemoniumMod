@@ -9,6 +9,7 @@ using System;
 using Steamworks;
 using System.Threading;
 using Pandemonium.Items.Materials;
+using Terraria.Graphics.Shaders;
 
 namespace Pandemonium.Items.Tools
 {
