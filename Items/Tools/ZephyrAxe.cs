@@ -24,8 +24,8 @@ namespace Pandemonium.Items.Tools
             item.melee = true;
             item.maxStack = 1;
             item.axe = 5;
-            item.width = 52;
-            item.height = 48;
+            item.width = 48;
+            item.height = 42;
             item.damage = 12;
             item.useTime = 9;
             item.useStyle = ItemUseStyleID.SwingThrow;
