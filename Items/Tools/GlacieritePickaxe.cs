@@ -9,6 +9,7 @@ using System;
 using Steamworks;
 using System.Threading;
 using Pandemonium.Items.Materials;
+using Terraria.Graphics.Shaders;
 
 namespace Pandemonium.Items.Tools
 {
@@ -41,6 +42,16 @@ namespace Pandemonium.Items.Tools
             modRecipe.AddIngredient(ModContent.ItemType<GlacieriteBar>(), 12);
             modRecipe.SetResult(this);
             modRecipe.AddRecipe();
+        }
+        public override void MeleeEffects(Player player, Rectangle hitbox)
+        {
+            Dust dust;
+            // You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
+            Vector2 position = Main.LocalPlayer.Center;
+            dust = Main.dust[Terraria.Dust.NewDust(position, 21, 0, 63, 0f, 0f, 0, new Color(0, 217, 255), 0.4605263f)];
+            dust.noGravity = true;
+            dust.shader = GameShaders.Armor.GetSecondaryShader(116, Main.LocalPlayer);
+            dust.fadeIn = 0.4736842f;
         }
     }
 }

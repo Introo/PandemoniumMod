@@ -23,7 +23,7 @@ namespace Pandemonium.Items.Tools
         {
             item.melee = true;
             item.maxStack = 1;
-            item.axe = 180;
+            item.axe = 25;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.width = 62;
             item.height = 62;
