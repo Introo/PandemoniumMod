@@ -46,5 +46,13 @@ namespace Pandemonium.Items.Tools
         {
             int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, DustID.WhiteTorch);
         }
+        public override void RightClick(Player player)
+        {
+            for (int k = 0; k > 15; k++)
+            {
+                player.AddBuff(BuffID.Mining, 10);
+                k = 0;
+            }
+        }
     }
 }

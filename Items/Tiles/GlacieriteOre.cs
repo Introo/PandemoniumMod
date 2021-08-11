@@ -17,6 +17,7 @@ namespace Pandemonium.Items.Tiles
             Main.tileBlockLight[Type] = true;
             Main.tileMergeDirt[Type] = true;
             Main.tileSpelunker[Type] = true;
+            minPick = 180;
 
             soundType = 21;
             soundStyle = 2;
